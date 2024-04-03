@@ -115,6 +115,17 @@ STATIC_URL = 'static/'
 APP_STATIC_ROOT = os.path.join(BASE_DIR, 'mashinani/static/')
 STATICFILES_DIRS = [APP_STATIC_ROOT]
 
+# Absolute filesystem path to the directory that will hold collected static files.
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# URL to use when referring to static files located in STATIC_ROOT.
+STATIC_URL = '/static/'
+
+# Additional locations of static files
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'mashinani/static'),
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
